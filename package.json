@@ -1,11 +1,14 @@
 {
   "name": "test-libs",
   "version": "0.1.0",
-  "private": true,
+  "description": "测试包",
+  "main": "lib/helloPackages.umd.min.js",
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build --target lib --name helloPackages --dest lib packages/index.js"
   },
   "dependencies": {
     "core-js": "^3.6.5",
